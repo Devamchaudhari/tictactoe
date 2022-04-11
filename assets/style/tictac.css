@@ -44,10 +44,12 @@ body{
     border:none;
     width: 130px;
     height: 100%;
+    color: white;
     text-align: center;
     text-transform: uppercase;
     outline: none;
     font: 40px 'Poppins';
+    font-weight: 600;
     background: transparent;
 }
 .cell-container:nth-last-child(1){
