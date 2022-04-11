@@ -10,8 +10,10 @@ function tapfun() {
     let inpNine = document.getElementById('inp-nine').value;
     let celebrateBox1 = document.getElementById('cel-box1');
     let celebrateBox2 = document.getElementById('cel-box2');
+    let celebrateBox3 = document.getElementById('cel-box3');
     let wonText = document.getElementById('wonText');
     let wonText2 = document.getElementById('wonText2');
+    let wonText3 = document.getElementById('wonText3');
     
     if((inpOne === 'X' && inpTwo === 'X' && inpThree === 'X') || (inpFour === 'X' && inpFive === 'X' && inpSix === 'X') || (inpSeven === 'X' && inpEight === 'X' && inpNine === 'X')){
         
@@ -19,25 +21,25 @@ function tapfun() {
        
         celebrateBox1.classList.toggle('celebrate-winbox');
         wonText.innerHTML=" Player 1 Won";
-        setTimeout(function(){
-            window.location.reload();
-         }, 1500);
+        // setTimeout(function(){
+        //     window.location.reload();
+        //  }, 1500);
     }
     else if((inpOne === 'X' && inpFour === 'X' && inpSeven === 'X')|| (inpTwo === 'X' && inpFive=== 'X' && inpEight === 'X')|| (inpThree === 'X' && inpSix=== 'X' && inpNine === 'X') ){
         
         celebrateBox1.classList.toggle('celebrate-winbox');
         wonText.innerHTML=" Player 1 Won";
-        setTimeout(function(){
-            window.location.reload();
-         }, 1500);
+        // setTimeout(function(){
+        //     window.location.reload();
+        //  }, 1500);
     }
     else if((inpOne === 'X' && inpFive === 'X' && inpNine === 'X')|| (inpThree == 'X' && inpFive === 'X' &&inpSeven==='X')){
         
         celebrateBox1.classList.toggle('celebrate-winbox');
         wonText.innerHTML=" Player 1 Won";
-        setTimeout(function(){
-            window.location.reload();
-         }, 1500);
+        // setTimeout(function(){
+        //     window.location.reload();
+        //  }, 1500);
     }
 //X won over
 // O won start
@@ -45,25 +47,25 @@ function tapfun() {
         
         celebrateBox2.classList.toggle('celebrate-winbox2');
         wonText2.innerHTML="Player 2 Won";
-        setTimeout(function(){
-            window.location.reload();
-         }, 1500);
+        // setTimeout(function(){
+        //     window.location.reload();
+        //  }, 1500);
     }
     else if((inpOne === 'O' && inpFour === 'O' && inpSeven === 'O')|| (inpTwo === 'O' && inpFive=== 'O' && inpEight === 'O')|| (inpThree === 'O' && inpSix=== 'O' && inpNine === 'O') ){
         
         celebrateBox2.classList.toggle('celebrate-winbox2');
         wonText2.innerHTML="Player 2 Won";
-        setTimeout(function(){
-            window.location.reload();
-         }, 1500);
+        // setTimeout(function(){
+        //     window.location.reload();
+        //  }, 1500);
     }
     else if((inpOne === 'O' && inpFive === 'O' && inpNine === 'O')|| (inpThree == 'O' && inpFive === 'O' &&inpSeven==='O')){
         
         celebrateBox2.classList.toggle('celebrate-winbox2');
         wonText2.innerHTML="Player 2 Won";
-        setTimeout(function(){
-            window.location.reload();
-         }, 1500);
+        // setTimeout(function(){
+        //     window.location.reload();
+        //  }, 1500);
         
     }
     // Check if tie between the two player
@@ -73,9 +75,9 @@ function tapfun() {
         inpFive == 'O') && (inpSix == 'X' || inpSix == 'O') &&
         (inpSeven== 'X' || inpSeven == 'O') && (inpEight == 'X' ||
         inpEight == 'O') && (inpNine== 'X' || inpNine== 'O')) {
-    
-        alert('Match Tie');
-        window.location.reload();
+            celebrateBox3.classList.toggle('celebrate-winbox3');
+            wonText3.innerHTML="Tie";
+        // window.location.reload();
     }
     else{
         if (flag == 1) {
