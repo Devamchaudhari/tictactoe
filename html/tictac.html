@@ -21,35 +21,35 @@
         <div class="board-wraper">
           <div class="cell-container">
             <div class="box">
-              <input type="text" class="box-input" id="inp-one" readonly onclick="tapfun()">
+              <input type="text" class="box-input" id="inp-one" readonly onclick=" resetfun1(); tapfun();">
             </div>
             <div class="box">
-              <input type="text" class="box-input" id="inp-two" readonly onclick="tapfun()">
+              <input type="text" class="box-input" id="inp-two" readonly onclick="resetfun2(); tapfun();">
             </div>
             <div class="box">
-              <input type="text" class="box-input" id="inp-three" readonly onclick="tapfun()">
-            </div>
-          </div>
-          <div class="cell-container">
-            <div class="box">
-              <input type="text" class="box-input" id="inp-four" readonly onclick="tapfun()">
-            </div>
-            <div class="box">
-              <input type="text" class="box-input" id="inp-five" readonly onclick="tapfun()">
-            </div>
-            <div class="box">
-              <input type="text" class="box-input" id="inp-six" readonly onclick="tapfun()">
+              <input type="text" class="box-input" id="inp-three" readonly onclick="resetfun3(); tapfun();">
             </div>
           </div>
           <div class="cell-container">
             <div class="box">
-              <input type="text" class="box-input" id="inp-seven" readonly onclick="tapfun()">
+              <input type="text" class="box-input" id="inp-four" readonly onclick="resetfun4();tapfun();">
             </div>
             <div class="box">
-              <input type="text" class="box-input" id="inp-eight" readonly onclick="tapfun()">
+              <input type="text" class="box-input" id="inp-five" readonly onclick="resetfun5(); tapfun();">
             </div>
             <div class="box">
-              <input type="text" class="box-input" id="inp-nine" readonly onclick="tapfun()">
+              <input type="text" class="box-input" id="inp-six" readonly onclick="resetfun6(); tapfun();">
+            </div>
+          </div>
+          <div class="cell-container">
+            <div class="box">
+              <input type="text" class="box-input" id="inp-seven" readonly onclick="resetfun7(); tapfun();">
+            </div>
+            <div class="box">
+              <input type="text" class="box-input" id="inp-eight" readonly onclick="resetfun8(); tapfun();">
+            </div>
+            <div class="box">
+              <input type="text" class="box-input" id="inp-nine" readonly onclick="resetfun9(); tapfun();">
             </div>
           </div>
         </div>
@@ -57,13 +57,13 @@
 
         <div class="player-container">
           <div class="player-wraper">
-           <button class="player-btn">Player 1</button> <span class="celebrate-icon">&#127881;</span>
+           <button class="player-btn">Player 1</button> <button class="celebrate-icon1" id="cel-box1" disabled>&#127881;<span class="won-text" id="wonText"></span></button>
           </div>
           <div class="player-wraper">
-           <button class="player-btn">Player 2</button> <span class="celebrate-icon" id="cel-box">&#127881; <span class="won-text" id="wonText"></span> </span>
+           <button class="player-btn">Player 2</button> <button class="celebrate-icon2" id="cel-box2" disabled>&#127881; <span class="won-text" id="wonText2"></span> </button>
           </div>
           <div class="player-wraper">
-            <button class="reset-btn">Reset</button>
+            <button class="reset-btn" id="reset-btn" onclick="resetFun()">Reset</button>
           </div>
         </div>
       </div>
