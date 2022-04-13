@@ -1,4 +1,6 @@
+
 function tapfun() {
+
     let inpOne = document.getElementById('inp-one').value;
     let inpTwo = document.getElementById('inp-two').value;
     let inpThree = document.getElementById('inp-three').value;
@@ -9,64 +11,104 @@ function tapfun() {
     let inpEight = document.getElementById('inp-eight').value;
     let inpNine = document.getElementById('inp-nine').value;
     let celebrateBox1 = document.getElementById('cel-box1');
-    let celebrateBox2 = document.getElementById('cel-box2');
-    let celebrateBox3 = document.getElementById('cel-box3');
+ 
     let wonText = document.getElementById('wonText');
-    let wonText2 = document.getElementById('wonText2');
-    let wonText3 = document.getElementById('wonText3');
-    
+       if (flag == 1) {
+        celebrateBox1.classList.add('celebrate-winbox');
+        celebrateBox1.classList.remove('celebrate-winbox4');
+         wonText.innerHTML="Player 1 X Turn";            
+
+        }
+        else {
+            celebrateBox1.classList.add('celebrate-winbox4');
+            celebrateBox1.classList.remove('celebrate-winbox');
+            wonText.innerHTML="Player 2 O Turn";    
+        }
     if((inpOne === 'X' && inpTwo === 'X' && inpThree === 'X') || (inpFour === 'X' && inpFive === 'X' && inpSix === 'X') || (inpSeven === 'X' && inpEight === 'X' && inpNine === 'X')){
         
-        console.log(celebrateBox1,"celebrate icon 1");
-       
-        celebrateBox1.classList.toggle('celebrate-winbox');
-        wonText.innerHTML=" Player 1 Won";
-        // setTimeout(function(){
-        //     window.location.reload();
-        //  }, 1500);
+        celebrateBox1.classList.toggle('celebrate-winbox2');
+        wonText.innerHTML=" Player 1 X Won";
+        document.getElementById("inp-one").disabled = true;
+        document.getElementById("inp-two").disabled = true;
+        document.getElementById("inp-three").disabled = true;
+        document.getElementById("inp-four").disabled = true;
+        document.getElementById("inp-five").disabled = true;
+        document.getElementById("inp-six").disabled = true;
+        document.getElementById("inp-seven").disabled = true;
+        document.getElementById("inp-eight").disabled = true;
+        document.getElementById("inp-nine").disabled = true;
     }
     else if((inpOne === 'X' && inpFour === 'X' && inpSeven === 'X')|| (inpTwo === 'X' && inpFive=== 'X' && inpEight === 'X')|| (inpThree === 'X' && inpSix=== 'X' && inpNine === 'X') ){
         
-        celebrateBox1.classList.toggle('celebrate-winbox');
-        wonText.innerHTML=" Player 1 Won";
-        // setTimeout(function(){
-        //     window.location.reload();
-        //  }, 1500);
+        celebrateBox1.classList.toggle('celebrate-winbox2');
+        wonText.innerHTML=" Player 1 X Won";
+        document.getElementById("inp-one").disabled = true;
+        document.getElementById("inp-two").disabled = true;
+        document.getElementById("inp-three").disabled = true;
+        document.getElementById("inp-four").disabled = true;
+        document.getElementById("inp-five").disabled = true;
+        document.getElementById("inp-six").disabled = true;
+        document.getElementById("inp-seven").disabled = true;
+        document.getElementById("inp-eight").disabled = true;
+        document.getElementById("inp-nine").disabled = true;
     }
     else if((inpOne === 'X' && inpFive === 'X' && inpNine === 'X')|| (inpThree == 'X' && inpFive === 'X' &&inpSeven==='X')){
         
-        celebrateBox1.classList.toggle('celebrate-winbox');
-        wonText.innerHTML=" Player 1 Won";
-        // setTimeout(function(){
-        //     window.location.reload();
-        //  }, 1500);
+        celebrateBox1.classList.toggle('celebrate-winbox2');
+        wonText.innerHTML=" Player 1 X Won";
+        document.getElementById("inp-one").disabled = true;
+        document.getElementById("inp-two").disabled = true;
+        document.getElementById("inp-three").disabled = true;
+        document.getElementById("inp-four").disabled = true;
+        document.getElementById("inp-five").disabled = true;
+        document.getElementById("inp-six").disabled = true;
+        document.getElementById("inp-seven").disabled = true;
+        document.getElementById("inp-eight").disabled = true;
+        document.getElementById("inp-nine").disabled = true;
     }
 //X won over
 // O won start
     else if((inpOne === 'O' && inpTwo === 'O' && inpThree === 'O') || (inpFour === 'O' && inpFive === 'O' && inpSix === 'O') || (inpSeven === 'O' && inpEight === 'O' && inpNine === 'O')){
-        
-        celebrateBox2.classList.toggle('celebrate-winbox2');
-        wonText2.innerHTML="Player 2 Won";
-        // setTimeout(function(){
-        //     window.location.reload();
-        //  }, 1500);
+        celebrateBox1.classList.toggle('celebrate-winbox2');
+       
+        wonText.innerHTML="Player 2 O Won";
+        document.getElementById("inp-one").disabled = true;
+        document.getElementById("inp-two").disabled = true;
+        document.getElementById("inp-three").disabled = true;
+        document.getElementById("inp-four").disabled = true;
+        document.getElementById("inp-five").disabled = true;
+        document.getElementById("inp-six").disabled = true;
+        document.getElementById("inp-seven").disabled = true;
+        document.getElementById("inp-eight").disabled = true;
+        document.getElementById("inp-nine").disabled = true;
     }
     else if((inpOne === 'O' && inpFour === 'O' && inpSeven === 'O')|| (inpTwo === 'O' && inpFive=== 'O' && inpEight === 'O')|| (inpThree === 'O' && inpSix=== 'O' && inpNine === 'O') ){
-        
-        celebrateBox2.classList.toggle('celebrate-winbox2');
-        wonText2.innerHTML="Player 2 Won";
-        // setTimeout(function(){
-        //     window.location.reload();
-        //  }, 1500);
+        celebrateBox1.classList.toggle('celebrate-winbox2');
+        wonText.innerHTML="Player 2 O Won";
+        document.getElementById("inp-one").disabled = true;
+        document.getElementById("inp-two").disabled = true;
+        document.getElementById("inp-three").disabled = true;
+        document.getElementById("inp-four").disabled = true;
+        document.getElementById("inp-five").disabled = true;
+        document.getElementById("inp-six").disabled = true;
+        document.getElementById("inp-seven").disabled = true;
+        document.getElementById("inp-eight").disabled = true;
+        document.getElementById("inp-nine").disabled = true;
     }
     else if((inpOne === 'O' && inpFive === 'O' && inpNine === 'O')|| (inpThree == 'O' && inpFive === 'O' &&inpSeven==='O')){
-        
-        celebrateBox2.classList.toggle('celebrate-winbox2');
-        wonText2.innerHTML="Player 2 Won";
-        // setTimeout(function(){
-        //     window.location.reload();
-        //  }, 1500);
-        
+        console.log('wonText------',wonText);
+        celebrateBox1.classList.toggle('celebrate-winbox2');
+        wonText.innerHTML="Player 2 O Won";
+        document.getElementById("inp-one").disabled = true;
+        document.getElementById("inp-two").disabled = true;
+        document.getElementById("inp-three").disabled = true;
+        document.getElementById("inp-four").disabled = true;
+        document.getElementById("inp-five").disabled = true;
+        document.getElementById("inp-six").disabled = true;
+        document.getElementById("inp-seven").disabled = true;
+        document.getElementById("inp-eight").disabled = true;
+        document.getElementById("inp-nine").disabled = true;
+
     }
     // Check if tie between the two player
     else if ((inpOne == 'X' || inpOne == 'O') && (inpTwo == 'X'
@@ -75,33 +117,65 @@ function tapfun() {
         inpFive == 'O') && (inpSix == 'X' || inpSix == 'O') &&
         (inpSeven== 'X' || inpSeven == 'O') && (inpEight == 'X' ||
         inpEight == 'O') && (inpNine== 'X' || inpNine== 'O')) {
-            celebrateBox3.classList.toggle('celebrate-winbox3');
-            wonText3.innerHTML="Tie";
+            celebrateBox1.classList.toggle('celebrate-winbox3');
+            wonText.innerHTML="Tie";
         // window.location.reload();
     }
     else{
-        if (flag == 1) {
-            // alert("PLayer O take turn, now its X turn");
-        }
+        
+         if (flag == 1) {
+            celebrateBox1.classList.add('celebrate-winbox');
+        celebrateBox1.classList.remove('celebrate-winbox4');
+         wonText.innerHTML="Player 1 X Turn";            
+        //     celebrateBox1.classList.toggle('celebrate-winbox');
+        //     wonText.innerHTML="Player 1 X Turn";            
+         }
         else {
-            // alert("PLayer X take turn, now its O turn");
-        }
+            celebrateBox1.classList.add('celebrate-winbox4');
+            celebrateBox1.classList.remove('celebrate-winbox');
+            wonText.innerHTML="Player 2 O Turn"; 
+        //     celebrateBox1.classList.toggle('celebrate-winbox4');
+        //     wonText.innerHTML="Player 2 O Turn";    
+             }
     }
     }
 
 
     // Reset Function
-
+flag=1;    
 function resetFun() {
-console.log("reset function");
+console.log("reset function"); 
 
-window.location.reload();
-//   document.getElementById('cel-box1').style.display='none';
-//   document.getElementById('cel-box2').style.display='none';
+tapfun();
+// window.location.reload();
+
+ document.getElementById('inp-one').value="";
+ document.getElementById('inp-two').value="";
+ document.getElementById('inp-three').value="";
+ document.getElementById('inp-four').value="";
+ document.getElementById('inp-five').value="";
+ document.getElementById('inp-six').value="";
+ document.getElementById('inp-seven').value="";
+ document.getElementById('inp-eight').value="";
+ document.getElementById('inp-nine').value="";
+ document.getElementById("inp-one").disabled = false;
+document.getElementById("inp-two").disabled = false;
+document.getElementById("inp-three").disabled = false;
+document.getElementById("inp-four").disabled = false;
+document.getElementById("inp-five").disabled = false;
+document.getElementById("inp-six").disabled = false;
+document.getElementById("inp-seven").disabled = false;
+document.getElementById("inp-eight").disabled = false;
+document.getElementById("inp-nine").disabled = false;
+let celebrateBox1 = document.getElementsByClassName('celebrate-icon1');
+celebrateBox1.classList.remove('celebrate-winbox2');
+celebrateBox1.classList.remove('celebrate-winbox3');
+celebrateBox1.classList.remove('celebrate-winbox');
+celebrateBox1.classList.remove('celebrate-winbox4');
 
 }
 
-// This below function check the player turn
+// This below function assign the player turn
 flag=1;
 function resetfun1() {
     if (flag == 1) {
