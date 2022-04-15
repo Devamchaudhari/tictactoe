@@ -87,7 +87,7 @@ body{
 }
 .celebrate-icon1{
     font-size: 29px;
-    opacity: 0;
+    display: none;
     margin: 0;
     padding-left: 20px;
     height: 45px;
@@ -98,12 +98,12 @@ body{
 }
 
 .celebrate-winbox{
-    opacity: 1;
+    display: block !important;
     width: auto;
     font-family: 'Poppins','Arial',sans-serif;
     font-size: 21px;
     font-weight: 600;
-    margin: 0;
+    margin: 14px auto !important;
     border:none;
     padding-right: 25px;
     color: white;
@@ -113,12 +113,12 @@ body{
 }
 
 .celebrate-winbox4{
-    opacity: 1;
+    display: block !important;
     width: auto;
     font-family: 'Poppins','Arial',sans-serif;
     font-size: 21px;
     font-weight: 600;
-    margin: 0;
+    margin: 14px auto !important;
     border:none;
     padding-right: 25px;
     color: white;
@@ -127,12 +127,12 @@ body{
     box-shadow: 12px 12px 16px 0 rgb(255 255 255 / 30%) inset, -8px -8px 12px 0 rgb(0 0 0 / 25%) inset;
 }
 .celebrate-winbox2{
-    opacity: 1 !important;
+    display: block !important;
     width: auto  !important;
     font-family: 'Poppins','Arial',sans-serif  !important;
     font-size: 21px  !important;
     font-weight: 600  !important;
-    margin: 0  !important;
+    margin: 14px auto !important;
     border:none;
     padding-right: 25px;
     color: white;
@@ -144,7 +144,7 @@ body{
     padding-right: 10px;
 }
 .celebrate-winbox3{
-    opacity: 1 !important;
+    display: block;
     width: auto  !important;
     font-family: 'Poppins','Arial',sans-serif  !important;
     font-size: 21px  !important;
@@ -180,12 +180,16 @@ body{
     box-shadow: 12px 12px 16px 0 rgb(255 255 255 / 30%) inset, -8px -8px 12px 0 rgb(0 0 0 / 25%) inset;
 }
 .player-wraper{
-    width: 100%;
     padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 21px;
+    display: none;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 24px;
+    width: auto;
 }
 .player-wraper2{
     width: 100%;
@@ -211,4 +215,47 @@ body{
 .reset-btn:hover{
     cursor: url("../images/click.png"), auto;
 }
+/* result table css*/
+
+.out-tab{
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px) saturate(100%) contrast(100%);
+    border-radius: 15px;
+    color: rgba(255,255,255,0.8);
+    width: 92%;
+    margin: 0px auto;
+    /* opacity: 0; */
+}
+.out-tab:hover{
+    cursor: url("../images/click.png"), auto;
+}
+.out-tab th{
+    font: 15px 'Poppins',sans-serif;
+    font-weight: 800;
+    padding: 10px;
+}
+.out-tab td{
+    padding: 15px;
+    font: 15px 'Poppins',sans-serif;
+}
+
+.out-tab a{
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.out-tab a .fa-trash{
+    padding-right: 15px;
+    font-size:20px;
+}
+.out-tab a .fa-edit{
+    padding-right:15px;
+    font-size:20px;
+}
+
+/* result table css*/
+
 /* player btn css */
+
